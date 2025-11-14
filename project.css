@@ -13,82 +13,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* 
-#menuBtn,
-.hamburger {
-  display: inline-flex !important;
-  align-items: center;
-  justify-content: center;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 6px;
-  width: 44px;
-  height: 40px;
-}
 
-
-.site-header {
-  position: fixed;      
-  top: 0;               
-  left: 0;
-  width: 100%;          
-  background-color: white; 
-  height: 90px;         
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  z-index: 1000;        
-}
-
-
-
-.side-menu .close-btn,
-.side-menu .icon-strip {
-  display: none;
-  pointer-events: none;
-}
-
-
-.side-menu.open .close-btn,
-.side-menu.open .icon-strip {
-  display: block;
-  pointer-events: auto;
-}
-
-
-.side-menu.open .close-btn {
-  position: absolute;
-  left: -56px;
-  top: 18px;
-  font-size: 28px;
-  color: #888;
-  z-index: 140;
-}
-.side-menu.open .icon-strip {
-  right: -64px;
-  z-index: 120;
-}
-
-
-.side-menu { pointer-events: none; }
-.side-menu.open { pointer-events: auto; }
-
-.backdrop { z-index: 110; } */
-
-
-
-/* .site-header {
-    display: flex;
-    height: 10px;
-    border: 2px;
-    font-size: 50px;
-    position: sticky;
-    top:0px;
-    z-index: 10;
-} */
 .site-header {
   position: fixed;
   top: 0;
@@ -104,9 +29,11 @@ html {
   z-index: 1000;
 }
 
+
 #container2 {
     margin-top: 60px;
 }
+
 #container2 p {
   color: black;
   font-size: 40px;
@@ -138,7 +65,6 @@ header {
   font-size: 36px;
   font-weight: bold;
 }
-
 
 
 nav.top-nav ul {
@@ -347,8 +273,6 @@ nav.top-nav li a:hover {
 }
 
 
-
-
 .container3 {
   margin-top: 100px;
   display: flex;
@@ -356,7 +280,6 @@ nav.top-nav li a:hover {
   border: 2px;
   flex-flow: row wrap;
   justify-content: center;
-  /* align-content: start; */
   gap: 40px;
   align-items: center;
   padding: 30px;
@@ -465,7 +388,7 @@ nav.top-nav li a:hover {
   transform: translateY(0);
 }
 
-/* Make sure text is not visible on small devices if you want: */
+
 @media (max-width: 520px) {
   .container3 .child .text h3 {
     font-size: 10px;
@@ -483,31 +406,25 @@ nav.top-nav li a:hover {
 
 }
 
-/* overlay text: keep absolutely centered and fade in on hover */
+
 .container3 .child .text {
   font-size: 10px;
   position: absolute;
-  /* full-bleed overlay */
   inset: 0;
-  /* top:0; right:0; bottom:0; left:0 */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* vertical center */
   align-items: center;
-  /* horizontal center */
   text-align: center;
   color:white;
   z-index: 30;
   pointer-events: none;
-  /* don't block hover on image */
   opacity: 0;
-  /* hidden by default */
   transform: translateY(8px);
   transition: opacity .33s ease, transform .33s ease;
 }
 
-/* show overlay when hovering the card */
+
 .container3 .child:hover .text {
   opacity: 1;
   pointer-events: auto;
@@ -515,10 +432,7 @@ nav.top-nav li a:hover {
 }
 
 
-
-
 .child img {
-  /* position: relative; */
   height: 100%;
   width: 100%;
   display: block;
@@ -527,16 +441,13 @@ nav.top-nav li a:hover {
 
 .child:hover img {
   opacity: 0.6;
-  /* display:none; */
-}
+  }
 
 .child:hover>p,
 .child:hover>h3 {
   opacity: 1;
 
 }
-
-
 
 
 
@@ -551,14 +462,11 @@ nav.top-nav li a:hover {
   background-color: blue;
   color: black;
   padding: 20px 40px;
-
-
 }
 
 .container5 {
   height: 400px;
   margin-top: 70px;
-  /* background-color: aqua; */
   width: 100%;
   display: flex;
   position: relative;
@@ -568,9 +476,6 @@ nav.top-nav li a:hover {
   border: 2px;
   flex-direction: row;
   font-size: 30px;
-
-
-
 }
 
 .container5 p {
@@ -610,10 +515,8 @@ nav.top-nav li a:hover {
 
 .container6 {
   display: flex;
-  /* height: 400px; */
   min-height: 400px;
   flex-direction: row;
-  /* background-color:yellow; */
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
@@ -640,7 +543,6 @@ nav.top-nav li a:hover {
   margin-top: 300px;
   align-items: center;
   justify-content: start;
-  /* padding:400px; */
 }
 
 .container7 {
@@ -689,7 +591,7 @@ nav.top-nav li a:hover {
   color: white;
 }
 
-/* ---------- Staggered translateY entrance on container with bigger delay ---------- */
+
 
 .container3 .child {
   opacity: 0;
@@ -702,7 +604,7 @@ nav.top-nav li a:hover {
   animation-fill-mode: forwards;
 }
 
-/* Bigger delay: 0.15s per item */
+
 .container3 .child:nth-child(1) {
   animation-delay: 0s;
 }
@@ -767,7 +669,7 @@ nav.top-nav li a:hover {
   animation-delay: 13.59s;
 }
 
-/* Keyframes */
+
 @keyframes containerSlideUp {
   from {
     opacity: 0;
@@ -784,12 +686,9 @@ nav.top-nav li a:hover {
   }
 }
 
-/* ---------------- Add Poppins (Google Font) + refined header/hero tweaks ---------------- */
 
-/* import Poppins — paste this at the top of your CSS file or keep here (works when appended too) */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
 
-/* apply Poppins broadly where needed */
 .logo,
 .site-header,
 #container2,
@@ -801,7 +700,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* logo */
+
 .logo {
   font-weight: 700;
   font-size: 38px;
@@ -810,7 +709,7 @@ body {
   margin-left: 70px;
 }
 
-/* subtitle (small blue text) */
+
 #container2> :first-child {
   color: #2e56ff;
   font-weight: 600;
@@ -818,27 +717,26 @@ body {
   margin-left: 120px;
 }
 
-/* large hero title (the <p><b>..</b></p> in your HTML) */
+
 #container2 p b {
   display: block;
   font-weight: 800;
   color: #3a3a4a;
   font-size: 60px;
-  /* desktop */
   line-height: 1.06;
   max-width: 900px;
   letter-spacing: -0.6px;
   margin-top: 8px;
 }
 
-/* bigger on wide screens */
+
 @media (min-width: 1200px) {
   #container2 p b {
     font-size: 72px;
   }
 }
 
-/* tablet / mobile scaling */
+
 @media (max-width: 900px) {
   #container2 p b {
     font-size: 40px;
@@ -855,10 +753,10 @@ body {
   }
 }
 
-/* =============== SIMPLE RESPONSIVE FIX (max-width: 768px) =============== */
+
 @media (max-width: 768px) {
 
-  /* HEADER */
+  
   .site-header {
     height: 70px;
     padding: 10px 20px;
@@ -871,7 +769,7 @@ body {
     margin-left: 20px;
   }
 
-  /* HERO SECTION */
+
   #container2 > :first-child {
     font-size: 20px;
     margin-left: 20px;
@@ -891,11 +789,11 @@ body {
   padding: 12px;
 }
 .container3 .child {
-  width: calc(50% - 10px); /* two-per-row */
+  width: calc(50% - 10px); 
   height: 360px;
 }
 
-  /* TEXT INSIDE CARD */
+  
   .container3 .child .text h3 {
     font-size: 20px;
   }
@@ -903,7 +801,7 @@ body {
     font-size: 14px;
   }
 
-  /* CLIENTS SECTION */
+  
   .container5 .child-20 {
     font-size: 30px;
     text-align: center;
@@ -937,7 +835,7 @@ body {
   }
   .container6 .childs img { max-width:140px; height:auto; display:block; }
 
-  /* container7 (strong overrides) */
+  
   .container7 { min-height:0!important; height:auto!important; padding:36px 18px; overflow:visible; }
   .container7 .child-1,
   .container7 .childss.child-1 {
@@ -969,11 +867,11 @@ body {
     width:100%;
   }
 }
-/* Fixes for the 800–900px range (targeted, minimal) */
+
 @media (min-width: 769px) and (max-width: 1100px) {
-  /* keep brand grid from overflowing and make logos smaller/centered */
+  
   .container6 {
-    max-width: calc(100% - 48px); /* leave padding space for scrollbar / gutter */
+    max-width: calc(100% - 48px); 
     padding: 18px 24px !important;
     box-sizing: border-box;
     justify-content: space-around;
@@ -994,7 +892,7 @@ body {
     opacity: .95;
   }
 
-  /* footer container: remove huge desktop gap and force CTA to be in-flow */
+  
   .container7 {
     padding: 28px 20px !important;
     min-height: 0 !important;
@@ -1008,12 +906,12 @@ body {
     width: 100% !important;
     display: flex !important;
     flex-direction: row !important;
-    justify-content: space-between !important; /* logos left, CTA right */
+    justify-content: space-between !important; 
     align-items: center !important;
     box-sizing: border-box;
   }
 
-  /* ensure CTA sits to the right but still inside footer at this width */
+  
   .container7 button,
   .container7 .child-1 button {
     position: relative !important;
@@ -1028,7 +926,7 @@ body {
     z-index: 2;
   }
 
-  /* footer links row: keep centered and not pushed off-screen */
+  
   .container7 .child-2 {
     width: auto !important;
     display: flex !important;
@@ -1041,3 +939,57 @@ body {
 
 
 
+
+@media (max-width: 900px) {
+  
+  #container2 {
+    text-align: center !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  
+  #container2 > :first-child {
+    display: block !important;
+    margin: 0 auto 8px auto !important;
+    text-align: center !important;
+    font-size: 18px !important;
+  }
+
+  
+  #container2 p b {
+    display: inline-block !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    max-width: 92vw !important;    
+    font-size: 32px !important;
+    line-height: 1.16 !important;
+  }
+
+  
+  .container5 p {
+    position: static !important;
+    transform: none !important;
+    margin: 14px auto !important;
+    text-align: center !important;
+    width: auto !important;
+  }
+
+  
+  .logo { margin-left: 12px !important; }
+  .container6 .childs { margin-left: 0 !important; padding: 8px 6px !important; }
+}
+
+
+@media (min-width: 901px) and (max-width: 1100px) {
+  #container2,
+  #container2 > :first-child,
+  #container2 p b {
+    text-align: center !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  #container2 p b { max-width: 600px; margin: 8px auto; }
+}
