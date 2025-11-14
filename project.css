@@ -1,0 +1,1043 @@
+body {
+  display: block;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 90px;
+
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* 
+#menuBtn,
+.hamburger {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  width: 44px;
+  height: 40px;
+}
+
+
+.site-header {
+  position: fixed;      
+  top: 0;               
+  left: 0;
+  width: 100%;          
+  background-color: white; 
+  height: 90px;         
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;        
+}
+
+
+
+.side-menu .close-btn,
+.side-menu .icon-strip {
+  display: none;
+  pointer-events: none;
+}
+
+
+.side-menu.open .close-btn,
+.side-menu.open .icon-strip {
+  display: block;
+  pointer-events: auto;
+}
+
+
+.side-menu.open .close-btn {
+  position: absolute;
+  left: -56px;
+  top: 18px;
+  font-size: 28px;
+  color: #888;
+  z-index: 140;
+}
+.side-menu.open .icon-strip {
+  right: -64px;
+  z-index: 120;
+}
+
+
+.side-menu { pointer-events: none; }
+.side-menu.open { pointer-events: auto; }
+
+.backdrop { z-index: 110; } */
+
+
+
+/* .site-header {
+    display: flex;
+    height: 10px;
+    border: 2px;
+    font-size: 50px;
+    position: sticky;
+    top:0px;
+    z-index: 10;
+} */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+#container2 {
+    margin-top: 60px;
+}
+#container2 p {
+  color: black;
+  font-size: 40px;
+  padding: 20px;
+  margin-left: 80px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, serif;
+  color: #111;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 28px;
+  gap: 12px;
+}
+
+.logo {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+
+
+nav.top-nav ul {
+  display: flex;
+  gap: 36px;
+  list-style: none;
+  align-items: center;
+}
+
+nav.top-nav li a {
+  text-decoration: none;
+  color: rebeccapurple;
+  font-size: 36px;
+  border-bottom: 3px solid transparent;
+  padding-bottom: 2px;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+nav.top-nav li a:hover {
+  color: #111;
+  border-color: rebeccapurple;
+}
+
+
+.image-hover {
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  margin: 10px auto;
+  overflow: hidden;
+  aspect-ratio: 16 / 6;
+  background: #f9d6db;
+}
+
+.image-hover img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 350ms ease, transform 350ms ease;
+}
+
+.image-hover .main-img {
+  z-index: 2;
+  opacity: 1;
+}
+
+.image-hover .hover-img {
+  z-index: 1;
+  opacity: 1;
+}
+
+.image-hover:hover .main-img {
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+.image-hover:hover .hover-img {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 48px;
+  height: 92px;
+  background: #fff;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.logo {
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.hamburger {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 8px;
+  width: 44px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+}
+
+.hamburger-icon {
+  font-size: 20px;
+  color: #333;
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .28s ease, visibility .28s;
+  z-index: 40;
+}
+
+
+.side-menu {
+  --w: 360px;
+  position: fixed;
+  top: 0;
+  right: calc(-1 * var(--w));
+  width: var(--w);
+  height: 100%;
+  background: #222;
+  color: #ddd;
+  padding: 36px 20px;
+  box-shadow: -20px 0 60px rgba(0, 0, 0, 0.45);
+  transition: right .32s cubic-bezier(.2, .9, .3, 1);
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-menu.open {
+  right: 0;
+}
+
+.backdrop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.close-btn {
+  position: absolute;
+  left: -56px;
+  top: 20px;
+  background: transparent;
+  border: none;
+  color: #888;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.side-nav {
+  margin-top: 44px;
+  flex: 1;
+}
+
+.side-nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0 6px;
+}
+
+.side-nav a {
+  color: #cfcfcf;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  padding: 18px 6px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.side-nav li.active a {
+  color: #fff;
+  font-weight: 700;
+}
+
+.icon-strip {
+  position: absolute;
+  right: -64px;
+  top: 28%;
+  width: 56px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.14);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.icon-strip .icon {
+  padding: 12px;
+  font-size: 16px;
+  color: #666;
+  border-top: 1px solid rgba(0, 0, 0, 0.04);
+  background: transparent;
+  width: 100%;
+  cursor: pointer;
+}
+
+.icon-strip .icon:first-child {
+  border-top: none;
+}
+
+.side-footer {
+  margin-top: auto;
+  opacity: .45;
+  font-size: 13px;
+  padding-top: 12px;
+}
+
+
+
+
+.container3 {
+  margin-top: 100px;
+  display: flex;
+  height: 3200px;
+  border: 2px;
+  flex-flow: row wrap;
+  justify-content: center;
+  /* align-content: start; */
+  gap: 40px;
+  align-items: center;
+  padding: 30px;
+  gap: 40px;
+  overflow: hidden;
+
+}
+
+.container3 .child {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  height: 600px;
+  width: 400px;
+  background: #eee;
+  transition: transform .45s cubic-bezier(.2, .9, .3, 1);
+}
+
+
+.container3 .child img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform-origin: center center;
+  transition: transform .6s ease, filter .45s ease, opacity .45s ease;
+}
+
+
+.container3 .child::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(63, 114, 255, 0.28) 0%, rgba(151, 86, 210, 0.30) 100%);
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+
+
+.container3 .child .text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  z-index: 30;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity .35s ease, transform .35s ease;
+}
+
+.container3 .child .text h3 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: .5px;
+}
+
+.container3 .child .text p {
+  margin-top: 12px;
+  font-size: 20px;
+  letter-spacing: 3px;
+  opacity: .95;
+}
+
+
+.container3 .child .icon-full {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 40;
+  border: none;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 40px;
+  opacity: 0;
+  transition: opacity .25s ease, transform .25s ease;
+  pointer-events: none;
+}
+
+.container3 .child:hover img {
+  transform: scale(1.06);
+  filter: saturate(.8) brightness(.95) contrast(.98);
+}
+
+.container3 .child:hover::before {
+  opacity: 1;
+}
+
+.container3 .child:hover .text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.container3 .child:hover .icon-full {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* Make sure text is not visible on small devices if you want: */
+@media (max-width: 520px) {
+  .container3 .child .text h3 {
+    font-size: 10px;
+  }
+}
+
+
+.container3 .child {
+  background-color: lightblue;
+  height: 600px;
+  width: 400px;
+  overflow: hidden;
+  border-radius: 20px;
+  
+
+}
+
+/* overlay text: keep absolutely centered and fade in on hover */
+.container3 .child .text {
+  font-size: 10px;
+  position: absolute;
+  /* full-bleed overlay */
+  inset: 0;
+  /* top:0; right:0; bottom:0; left:0 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* vertical center */
+  align-items: center;
+  /* horizontal center */
+  text-align: center;
+  color:white;
+  z-index: 30;
+  pointer-events: none;
+  /* don't block hover on image */
+  opacity: 0;
+  /* hidden by default */
+  transform: translateY(8px);
+  transition: opacity .33s ease, transform .33s ease;
+}
+
+/* show overlay when hovering the card */
+.container3 .child:hover .text {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+
+
+
+.child img {
+  /* position: relative; */
+  height: 100%;
+  width: 100%;
+  display: block;
+  transition: opacity 0.5s ease;
+}
+
+.child:hover img {
+  opacity: 0.6;
+  /* display:none; */
+}
+
+.child:hover>p,
+.child:hover>h3 {
+  opacity: 1;
+
+}
+
+
+
+
+
+.container4 {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.container4 button {
+  font-size: 20px;
+  background-color: blue;
+  color: black;
+  padding: 20px 40px;
+
+
+}
+
+.container5 {
+  height: 400px;
+  margin-top: 70px;
+  /* background-color: aqua; */
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border: 2px;
+  flex-direction: row;
+  font-size: 30px;
+
+
+
+}
+
+.container5 p {
+  height: 100%;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 200px;
+}
+
+
+.chi {
+  height: 100px;
+  display: flex;
+
+
+}
+
+.container5 .child-20 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 80px;
+  margin-left: 60px;
+  margin-right: 50px;
+
+}
+
+
+
+
+.container6 {
+  display: flex;
+  /* height: 400px; */
+  min-height: 400px;
+  flex-direction: row;
+  /* background-color:yellow; */
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 2px;
+  gap: 40px;
+  padding: 20px;
+}
+
+.container6 .childs {
+  display: flex;
+  width: 300px;
+  border: 2px;
+  flex-flow: row wrap;
+  margin-top: 80px;
+  margin-left: 50px;
+
+}
+
+.container6 .childs child-1 img {
+  size: 50px;
+  height: 10px;
+  width: 100%;
+  display: block;
+  margin-top: 300px;
+  align-items: center;
+  justify-content: start;
+  /* padding:400px; */
+}
+
+.container7 {
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+  border: 2px;
+  background-color:#3a3a4a;
+  justify-content: center;
+}
+
+
+.container7 button {
+  background-color: blue;
+  width: 200px;
+  height: 50px;
+  align-content: end;
+  font-size: 20px;
+}
+
+.container7 .child-1 {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin-block-end: 50px;
+  gap: 800px;
+  padding: 40px 30px;
+  margin-left: 10px;
+}
+
+
+.container7 .child-2 {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+
+}
+
+.link {
+  text-decoration: none;
+  text-decoration-line: none;
+  color: white;
+}
+
+/* ---------- Staggered translateY entrance on container with bigger delay ---------- */
+
+.container3 .child {
+  opacity: 0;
+  transform: translate3d(0, 28px, 0);
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  animation-name: containerSlideUp;
+  animation-duration: 1.56s;
+  animation-timing-function: cubic-bezier(.2, .9, .25, 1);
+  animation-fill-mode: forwards;
+}
+
+/* Bigger delay: 0.15s per item */
+.container3 .child:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.container3 .child:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.container3 .child:nth-child(3) {
+  animation-delay: 1.59s;
+}
+
+.container3 .child:nth-child(4) {
+  animation-delay: 2.29s;
+}
+
+.container3 .child:nth-child(5) {
+  animation-delay: 3.12s;
+}
+
+.container3 .child:nth-child(6) {
+  animation-delay: 4s;
+}
+
+.container3 .child:nth-child(7) {
+  animation-delay: 5s;
+}
+
+.container3 .child:nth-child(8) {
+  animation-delay: 6s;
+}
+
+.container3 .child:nth-child(9) {
+  animation-delay: 7s;
+}
+
+.container3 .child:nth-child(10) {
+  animation-delay: 8s;
+}
+
+.container3 .child:nth-child(11) {
+  animation-delay: 9.03s;
+}
+
+.container3 .child:nth-child(12) {
+  animation-delay: 10.01s;
+}
+
+.container3 .child:nth-child(13) {
+  animation-delay: 11.4s;
+}
+
+.container3 .child:nth-child(14) {
+  animation-delay: 12.3s;
+}
+
+.container3 .child:nth-child(15) {
+  animation-delay: 13s;
+}
+
+.container3 .child:nth-child(16) {
+  animation-delay: 13.59s;
+}
+
+/* Keyframes */
+@keyframes containerSlideUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 28px, 0);
+  }
+
+  60% {
+    transform: translate3d(0, -6px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* ---------------- Add Poppins (Google Font) + refined header/hero tweaks ---------------- */
+
+/* import Poppins — paste this at the top of your CSS file or keep here (works when appended too) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
+
+/* apply Poppins broadly where needed */
+.logo,
+.site-header,
+#container2,
+#container2> :first-child,
+#container2 p b,
+body {
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* logo */
+.logo {
+  font-weight: 700;
+  font-size: 38px;
+  color: #2e2e35;
+  letter-spacing: -0.3px;
+  margin-left: 70px;
+}
+
+/* subtitle (small blue text) */
+#container2> :first-child {
+  color: #2e56ff;
+  font-weight: 600;
+  font-size: 25px;
+  margin-left: 120px;
+}
+
+/* large hero title (the <p><b>..</b></p> in your HTML) */
+#container2 p b {
+  display: block;
+  font-weight: 800;
+  color: #3a3a4a;
+  font-size: 60px;
+  /* desktop */
+  line-height: 1.06;
+  max-width: 900px;
+  letter-spacing: -0.6px;
+  margin-top: 8px;
+}
+
+/* bigger on wide screens */
+@media (min-width: 1200px) {
+  #container2 p b {
+    font-size: 72px;
+  }
+}
+
+/* tablet / mobile scaling */
+@media (max-width: 900px) {
+  #container2 p b {
+    font-size: 40px;
+  }
+
+  #container2> :first-child {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 520px) {
+  #container2 p b {
+    font-size: 30px;
+  }
+}
+
+/* =============== SIMPLE RESPONSIVE FIX (max-width: 768px) =============== */
+@media (max-width: 768px) {
+
+  /* HEADER */
+  .site-header {
+    height: 70px;
+    padding: 10px 20px;
+  }
+  body {
+    padding-top: 70px;
+  }
+  .logo {
+    font-size: 26px;
+    margin-left: 20px;
+  }
+
+  /* HERO SECTION */
+  #container2 > :first-child {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  #container2 p b {
+    font-size: 32px;
+    margin-left: 20px;
+    max-width: 100%;
+    line-height: 1.2;
+  }
+
+ .container3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 12px;
+}
+.container3 .child {
+  width: calc(50% - 10px); /* two-per-row */
+  height: 360px;
+}
+
+  /* TEXT INSIDE CARD */
+  .container3 .child .text h3 {
+    font-size: 20px;
+  }
+  .container3 .child .text p {
+    font-size: 14px;
+  }
+
+  /* CLIENTS SECTION */
+  .container5 .child-20 {
+    font-size: 30px;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .container5 p {
+    position: static;
+    transform: none;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+ .container6 {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:24px;
+    padding:18px;
+    height:auto;
+  }
+  .container6 .childs {
+    width:45%;
+    max-width:240px;
+    margin:0;
+    padding:8px 0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .container6 .childs img { max-width:140px; height:auto; display:block; }
+
+  /* container7 (strong overrides) */
+  .container7 { min-height:0!important; height:auto!important; padding:36px 18px; overflow:visible; }
+  .container7 .child-1,
+  .container7 .childss.child-1 {
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:center!important;
+    justify-content:center!important;
+    gap:18px!important;
+    margin:0!important;
+    padding:0!important;
+    width:100%;
+  }
+  .container7 button,
+  .container7 .child-1 button,
+  .container7 .childss.child-1 button {
+    position:static!important;
+    margin:0 auto!important;
+    display:inline-block!important;
+    min-width:140px;
+    padding:10px 18px;
+    font-size:15px;
+  }
+  .container7 .child-2,
+  .container7 .childss.child-2 {
+    display:flex!important;
+    flex-wrap:wrap!important;
+    justify-content:center!important;
+    gap:10px!important;
+    width:100%;
+  }
+}
+/* Fixes for the 800–900px range (targeted, minimal) */
+@media (min-width: 769px) and (max-width: 1100px) {
+  /* keep brand grid from overflowing and make logos smaller/centered */
+  .container6 {
+    max-width: calc(100% - 48px); /* leave padding space for scrollbar / gutter */
+    padding: 18px 24px !important;
+    box-sizing: border-box;
+    justify-content: space-around;
+  }
+  .container6 .childs {
+    width: 45% !important;
+    max-width: 320px;
+    margin: 12px 6px !important;
+    padding: 8px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container6 .childs img {
+    max-width: 160px;
+    height: auto;
+    display: block;
+    opacity: .95;
+  }
+
+  /* footer container: remove huge desktop gap and force CTA to be in-flow */
+  .container7 {
+    padding: 28px 20px !important;
+    min-height: 0 !important;
+    box-sizing: border-box;
+    overflow: visible !important;
+  }
+  .container7 .child-1 {
+    gap: 18px !important;
+    padding: 18px 10px !important;
+    margin: 0 !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important; /* logos left, CTA right */
+    align-items: center !important;
+    box-sizing: border-box;
+  }
+
+  /* ensure CTA sits to the right but still inside footer at this width */
+  .container7 button,
+  .container7 .child-1 button {
+    position: relative !important;
+    right: 0 !important;
+    left: auto !important;
+    top: auto !important;
+    transform: none !important;
+    margin: 0 !important;
+    padding: 10px 16px !important;
+    min-width: 140px;
+    display: inline-block;
+    z-index: 2;
+  }
+
+  /* footer links row: keep centered and not pushed off-screen */
+  .container7 .child-2 {
+    width: auto !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 12px !important;
+    margin-left: 6px !important;
+  }
+}
+
+
+

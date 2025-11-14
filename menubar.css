@@ -1,0 +1,11 @@
+.container{
+    display:flex;
+    border: 2px solid;
+    background-color: blueviolet;
+    justify-content: space-around;
+    
+}
+.child{
+    padding: 20px;
+    background-color: aqua;
+}

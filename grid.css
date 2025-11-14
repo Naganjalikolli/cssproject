@@ -1,0 +1,42 @@
+.container{
+    display: grid;
+    grid-template-columns:100px 100px 100px 100px;
+    gap: 2px;
+}
+.child1{
+    padding: 30px;
+    background-color: aqua;
+    grid-row:1/4;
+}
+.child2{
+    padding: 30px;
+    background-color:blue;
+    grid-column: 2/4;
+}
+.child3{
+    padding: 30px;
+    background-color:blueviolet;
+}
+.child4{
+    padding: 30px;
+    background-color:brown;
+}
+.child5{
+    padding: 30px;
+    background-color:burlywood;
+}
+.child6{
+    padding: 30px;
+    background-color:chartreuse;
+    grid-row: 2/4;
+    grid-column: 4/5;
+    
+}
+.child7{
+    padding: 30px;
+    background-color:cornflowerblue;
+}
+.child8{
+    padding: 30px;
+    background-color:darkgreen;
+}

@@ -1,0 +1,13 @@
+.container1{
+    display:flex;
+    height:100px;
+    background-color: blue;
+
+}
+.container2{
+    display:flex;
+    height:200px;
+    background-color: brown;
+
+
+}
