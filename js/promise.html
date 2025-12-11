@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+</head>
+<body>
+    <script>
+        // const URL="https://dummyjson.com/quotes";
+        // fetch(URL).then(res=>res.json()).then(data=>console.log(data.quotes));
+        // const URL="https://dummyjson.com/todos";
+        // fetch(URL).then(res=>res.json()).then(data=>{
+        //     for(var i=0;i<data.todos.length;i++)
+        //     {
+        //         console.log(data.todos[i].completed);
+        //     }
+                
+        //     })
+        const URL="https://jsonplaceholder.typicode.com/photos";
+        fetch(URL).then(res=>res.json()).then(data=>{
+            for(var i=0;i<data.length;i++)
+            {
+                console.log(data[i].title);
+            }
+                
+              })
+
+        // const URL="https://pokeapi.co/api/v2/pokemon/ditto";
+        // fetch(URL).then(res=>res.json()).then(data=>{
+        //     for(var i=0;i<data.abilities.length;i++)
+        //     {
+        //         console.log(data.abilities[i].ability.name);
+        //     }
+        //     console.log("---------------");
+        //     for(var i=0;i<data.game_indices.length;i++)
+        //     {
+        //         console.log(data.game_index[i].version.url);
+                
+        //     }
+        // })
+            // const URL="https://pokeapi.co/api/v2/pokemon/ditto";
+            // fetch(URL).then(res=>res.json()).then(data=>{
+            //     for(var i=0;i<data.name.length;i++)
+            // {
+            //     console.log(data.name[i].limber);
+                
+            // }
+            // }
+            // console.log(data.ditto));
+            
+
+        
+
+    </script>
+    
+</body>
+</html>

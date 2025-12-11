@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        
+        .container>div>img{
+            overflow:hidden;
+            height: 150px;
+            width: 150px;
+            padding:20px;
+            
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+            /* border:2px solid; */
+            gap:20px;
+            text-align: center;
+            padding:0px;
+        }
+        .container>div{
+            border:2px solid;
+        }
+        h3{
+            color:deepskyblue;
+            font-size:larger;
+            align-content: center;
+        }
+        p{
+            color:deeppink;
+            font-size:larger;
+            text-align: center;
+        }
+        .container.div{
+            padding:10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main" class="container"></div>
+    <script>
+       async function getData(){
+        try{
+            let res=await fetch("https://fakestoreapi.com/products");
+            if(!res.ok){
+                throw new Error("something went wrong")
+            }
+            let data=await res.json()
+            fetchData(data)
+
+        }catch(error){
+            console.log(error.get.message);
+            
+        }
+
+       }
+
+       function fetchData(data){
+        let container=document.getElementById("main");
+        data.forEach(obj=> {
+            
+            let child=document.createElement("div")
+            child.innerHTML=`
+            
+            <img src='${obj.image}'>
+            <h3><b>${obj.title}</b></h3>
+            <p><b>Category: ${obj.category}</b></p>
+            <p><b>price:${obj.price}</b></p>
+            `
+            container.appendChild(child)
+        });
+
+       }
+       
+       getData();
+    </script>
+</body>
+</html>
